@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1>Feedback Survey Form</h1>
+  <form>
+
+    <!-- Text Input Fields -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Dropdown Menu -->
+    <label for="topic">Choose a Topic:</label><br>
+    <select id="topic" name="topic">
+      <option value=""> Select a topic</option>
+      <option value="html">HTML Basics</option>
+      <option value="css">CSS Styling</option>
+      <option value="javascript">JavaScript</option>
+      <option value="UI/UX">UI/UX Design</option>
+    </select><br><br>
+
+    <!-- Multiple Choice (Radio Buttons) -->
+    <label>How did you find this course?</label><br>
+    <input type="radio" id="friend" name="source" value="friend">
+    <label for="friend">Through a friend</label><br>
+    <input type="radio" id="social" name="source" value="social">
+    <label for="social">Social Media</label><br>
+    <input type="radio" id="search" name="source" value="search">
+    <label for="search">Google Search</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Which topics do you find most useful?</label><br>
+    <input type="checkbox" id="html" name="topics" value="html">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="topics" value="css">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="js" name="topics" value="js">
+    <label for="js">JavaScript</label><br><br>
+
+    <!-- Rating Scale -->
+    <label>Rate your overall experience (1 to 5):</label><br>
+    <input type="radio" id="rate1" name="rating" value="1"><label for="rate1">1</label>
+    <input type="radio" id="rate2" name="rating" value="2"><label for="rate2">2</label>
+    <input type="radio" id="rate3" name="rating" value="3"><label for="rate3">3</label>
+    <input type="radio" id="rate4" name="rating" value="4"><label for="rate4">4</label>
+    <input type="radio" id="rate5" name="rating" value="5"><label for="rate5">5</label><br><br>
+
+    <!-- Textarea -->
+    <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Write your comments here..."></textarea><br><br>
+
+    <button type="submit">Submit Feedback</button>
+
+  </form>
+
+</body>
+</html>
